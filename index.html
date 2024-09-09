@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,9 +18,59 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>CSS display reference</h1>
-        
-    </section>
+    <main>
+        <section class="css">
+            <h2>CSS display reference</h2>
+            <h3>Basic syntax</h3>
+            <div>
+                <p><code>display: &lt;value&gt;</code></p>
+            </div>
+            <h3>Display block</h3>
+            <p>They create a line break after the element and occupy the full width of their parent container.</p>
+            <div>
+                <p><code>.block-element {</code></p>
+                <p><code>display: block;</code></p>
+                <p><code>}</code></p>
+            </div>
+            <h3>Display inline</h3>
+            <p>They don’t create line breaks and occupy only the necessary width and height based on their content.</p>
+            <div>
+                <p><code>.inline-element {</code></p>
+                <p><code>display: inline;</code></p>
+                <p><code>}</code></p>
+            </div>
+            <h3>Display inline-block</h3>
+            <p>They behave like inline elements but allow you to set width, height, padding, and margins.</p>
+            <div>
+                <p><code>.inline-element {</code></p>
+                <p><code>display: inline-block;</code></p>
+                <p><code>}</code></p>
+            </div>
+            <h3>Display none</h3>
+            <p>They don’t take up any space in the document flow.</p>
+            <div>
+                <p><code>.inline-element {</code></p>
+                <p><code>display: none;</code></p>
+                <p><code>}</code></p>
+            </div>
+            <h3>Display flex</h3>
+            <p>Create a flex container, allowing you to build flexible and responsive layouts. Flex items inside the container can be positioned and resized using flexbox properties.</p>
+            <div>
+                <p><code>.inline-element {</code></p>
+                <p><code>display: flex;</code></p>
+                <p><code>}</code></p>
+            </div>
+            <h3>Display grid</h3>
+            <p>Create a grid container that enables you to define rows and columns, creating a two-dimensional grid system. Child elements inside the container can be placed in specific cells and adjusted for size and alignment.</p>
+            <div>
+                <p><code>.inline-element {</code></p>
+                <p><code>display: grid;</code></p>
+                <p><code>grid-template-columns: 1fr 1fr 1fr;</code></p>
+                <p><code>grid-gap: 10px;</code></p>
+                <p><code>}</code></p>
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>
